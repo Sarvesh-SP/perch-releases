@@ -3,6 +3,32 @@
     <channel>
         <title>Perch</title>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Sun, 08 Nov 2026 13:51:25 +0530</pubDate>
+            <link>https://perch-notch.netlify.app/</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<b>Perch for Mac</b>
+
+<li><b>Money tab</b> (optional): your Karo Budget data on the Mac. Safe to spend today, budget against actual with plans you can edit, and add, edit or delete transactions. Works on the Mac alone; with iCloud on it stays in step with Karo Budget on iPhone.</li>
+<li><b>Runs tab</b> (optional): what you record with just for run. Weekly chart, totals and streaks, filtered by activity (Running, Cycling…), and a big map window for any run with the route coloured by pace, splits, elevation and a share link.</li>
+<li><b>Beside the closed notch</b> (optional): money left today and your run streak.</li>
+<li><b>⌘K palette:</b> "spent 250 coffee #food" logs an expense.</li>
+<li><b>Claude:</b> new tools to log expenses, read spending and budgets, and summarise runs by activity.</li>
+<li><b>Sync status</b> for Money and Runs, with Sync now in the tab headers and Settings.</li>
+<li><b>Goals are gone.</b> Weekly review stays.</li>
+
+<b>Perch for iPhone</b> — Today, Upcoming and Notes; Goals removed.
+
+]]></description>
+            <enclosure url="https://perch-notch.netlify.app/downloads/Perch-1.1.0.dmg" length="6764627" type="application/octet-stream" sparkle:edSignature="B0k1GIQ9pCa+cW4DmwPVScUFGAoylwRbFMRdvZBh6fotM9LF7ZyVrFiO2Mb8lHJz3e5e+M1Nskpq9sfgy1Y2CQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch2-1.delta" sparkle:deltaFrom="1" length="2396362" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="pRXggwAM5rfMTQfhRG45b582cLSNrdoEXxXGP7/eEFzc+YCCRN+ANhyTaOJ6hYGo06FG5JsSZxvsTGwLETQrDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Wed, 04 Nov 2026 18:09:46 +0530</pubDate>
             <link>https://perch-notch.netlify.app/</link>
