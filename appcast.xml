@@ -3,6 +3,26 @@
     <channel>
         <title>Perch</title>
         <item>
+            <title>1.1.1</title>
+            <pubDate>Sun, 08 Nov 2026 17:57:53 +0530</pubDate>
+            <link>https://perch-notch.netlify.app/</link>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<b>Perch for Mac</b>
+
+<li><b>Runs:</b> the activity filter now lists all your tags (Running, Cycling…), even when only one kind has been recorded so far.</li>
+<li><b>Money and Runs:</b> tab labels no longer wrap in a narrow panel; the sync status shrinks to its cloud icon (hover for details, click to sync).</li>
+
+]]></description>
+            <enclosure url="https://perch-notch.netlify.app/downloads/Perch-1.1.1.dmg" length="6775088" type="application/octet-stream" sparkle:edSignature="hmYRKCbD/LlRjowOacg0DhosJRifdV3pYzS7rCEnv2CVQkCh2vwW9+omZPLBstOWiXtXCSm28w7dNqPyR4rYCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch3-2.delta" sparkle:deltaFrom="2" length="654010" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+tf2CF4LGt09AUq7hMwSifA8ZntWDRvDIKYwtsVbW10v5JJIqoiHIROvLNDG38qDiKoxym9th/CSdO9aehGYBA=="/>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch3-1.delta" sparkle:deltaFrom="1" length="2406062" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="uwHr/1CSPfvvpvD/J0H0A4po2xHSVv4BhvKzyNxkwqLdZ6gikQXXgBmmlZdWaaVIpCzTtb1wG0ymW7JcDNJWDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Sun, 08 Nov 2026 13:51:25 +0530</pubDate>
             <link>https://perch-notch.netlify.app/</link>
