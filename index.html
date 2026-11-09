@@ -7,12 +7,12 @@
 <meta name="description" content="Perch lives in your Mac's notch: today's tasks, notes, a focus timer, learning plans, money and runs, one move of the pointer away. Free for macOS 14 or later.">
 <meta property="og:title" content="Perch — your day, in the notch">
 <meta property="og:description" content="Tasks, notes, focus, learning plans, money and runs in your Mac's notch. Free.">
-<meta property="og:image" content="assets/tab-today.jpg">
+<meta property="og:image" content="https://perch-notch.netlify.app/assets/tab-today.jpg">
 <meta name="theme-color" content="#0b0b0d">
 <link rel="icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400&family=Archivo:wdth,wght@100..125,700..900&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0b0b0d; --bg2: #121215; --card: #16161a; --line: rgba(255,255,255,.08); --line2: rgba(255,255,255,.14);
@@ -234,6 +234,48 @@
   .final { text-align: center; padding-top: 130px; }
   .final img { width: 96px; height: 96px; margin: 0 auto 26px; border-radius: 22px; box-shadow: 0 20px 60px -10px color-mix(in srgb, var(--lavender) 60%, transparent); }
   .final h2 { margin-left: auto; margin-right: auto; }
+
+  /* The family: the other apps, each in its own theme */
+  .family { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 44px; }
+  .appcard { position: relative; overflow: hidden; border-radius: 30px; padding: 34px 34px 0; min-height: 540px; display: flex; flex-direction: column; text-decoration: none;
+    transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s; box-shadow: 0 30px 70px -40px rgba(0,0,0,.6); }
+  .appcard:hover { transform: translateY(-6px); box-shadow: 0 40px 90px -40px rgba(0,0,0,.7); }
+  .appcard .head { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
+  .appcard .head img { width: 52px; height: 52px; border-radius: 13px; box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+  .appcard .head b { display: block; font-size: 17px; } .appcard .head small { font-size: 13px; opacity: .6; }
+  .appcard h3 { margin: 0 0 12px; font-size: clamp(32px, 3.6vw, 46px); line-height: 1; }
+  .appcard p { margin: 0 0 22px; font-size: 16px; max-width: 420px; }
+  .appcard .go { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 15px; }
+  .appcard .art { margin-top: auto; padding-top: 30px; }
+  .appcard.kb { background: #f6f5f1; color: #1f2321; border: 1px solid rgba(31,35,33,.09); }
+  .appcard.kb::before { content: ""; position: absolute; right: -120px; top: -120px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(closest-side, rgba(184,207,175,.85), transparent 72%); }
+  .appcard.kb h3 { font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -.03em; }
+  .appcard.kb h3 em { color: #4f7a49; font-weight: 400; }
+  .appcard.kb p { color: rgba(31,35,33,.66); }
+  .appcard.kb .go { color: #3f6b3a; }
+  .kbart { position: relative; background: #fff; border-radius: 22px 22px 0 0; padding: 20px 22px 26px; box-shadow: 0 -10px 40px -20px rgba(31,35,33,.25); }
+  .kbart .left { font-family: Fraunces, serif; font-weight: 600; font-size: 40px; letter-spacing: -.02em; line-height: 1; }
+  .kbart .cal { display: grid; grid-template-columns: repeat(14, 1fr); gap: 4px; margin-top: 16px; }
+  .kbart .cal i { aspect-ratio: 1; border-radius: 4px; background: #ecebe6; transition: background .5s; }
+  .appcard.jfr { background: #0f141d; color: #f3f5f0; }
+  .appcard.jfr h3 { font-family: Archivo, Inter, sans-serif; font-stretch: 115%; font-weight: 800; letter-spacing: -.04em; }
+  .appcard.jfr h3 span { color: #cbef52; }
+  .appcard.jfr p { color: rgba(243,245,240,.66); }
+  .appcard.jfr .go { color: #cbef52; }
+  .jfrart { position: relative; margin: 0 -34px; height: 230px; }
+  .jfrart svg { width: 100%; height: 100%; display: block; }
+  .jfrart .stats { position: absolute; left: 34px; bottom: 26px; display: flex; gap: 22px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -.02em; }
+  .jfrart .stats small { display: block; font-size: 11px; letter-spacing: .14em; font-weight: 700; font-stretch: 100%; color: rgba(243,245,240,.45); }
+  .appcard .store { position: absolute; top: 34px; right: 34px; z-index: 2; font-size: 12px; font-weight: 600; padding: 5px 11px; border-radius: 999px; }
+  .appcard.kb .store { background: rgba(31,35,33,.07); } .appcard.jfr .store { background: rgba(255,255,255,.08); }
+  @media (max-width: 860px) { .family { grid-template-columns: 1fr; } .appcard { min-height: 0; padding: 28px 24px 0; } .jfrart { margin: 0 -24px; } .jfrart .stats { left: 24px; } .appcard .store { top: 28px; right: 24px; } }
+  @media (prefers-reduced-motion: reduce) { .appcard, .appcard:hover { transform: none; } }
+
+  /* Footer: the family */
+  .famrow { display: flex; gap: 12px; flex-wrap: wrap; padding-top: 34px; }
+  .famrow a { display: flex; align-items: center; gap: 10px; padding: 8px 14px 8px 8px; border: 1px solid var(--line); border-radius: 16px; text-decoration: none; color: var(--ink); font-size: 14px; font-weight: 600; }
+  .famrow a img { width: 34px; height: 34px; border-radius: 9px; }
+  .famrow a small { display: block; font-weight: 500; color: var(--faint); font-size: 12px; }
   footer { border-top: 1px solid var(--line); margin-top: 90px; }
   footer .wrap { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; padding-top: 26px; padding-bottom: 40px; font-size: 14px; color: var(--faint); }
   footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
@@ -278,6 +320,7 @@
       <a href="#ai">AI agents</a>
       <a href="#iphone">iPhone</a>
       <a href="#privacy">Privacy</a>
+      <a href="#apps">Apps</a>
       <a href="#faq">FAQ</a>
       <a class="btn btn-sm" href="Perch.dmg" download>Download</a>
     </div>
@@ -481,6 +524,45 @@
     </div>
   </section>
 
+  <section id="apps">
+    <div class="wrap">
+      <div class="eyebrow reveal">Also by Sarvesh SP</div>
+      <h2 class="reveal">Two more apps, <span class="serif">same quiet care.</span></h2>
+      <p class="sub reveal" style="max-width:620px">Each one stands on its own. If you use Perch on a Mac too, their Money and Runs tabs bring them beside the notch.</p>
+      <div class="family">
+        <a class="appcard kb reveal" href="/karo-budget/">
+          <span class="store">iPhone · Free</span>
+          <div class="head"><img src="assets/apps/karo-budget-180.png" alt=""><span><b>Karo Budget</b><small>Calm monthly budget, in ₹</small></span></div>
+          <h3>Know what's left <em>for today.</em></h3>
+          <p>Plan the month once and get one number to live by each day, a heat map of your spending, and where your savings habit leads.</p>
+          <span class="go">Explore Karo Budget →</span>
+          <div class="art"><div class="kbart" aria-hidden="true">
+            <div style="font-size:13px;color:rgba(31,35,33,.5);font-weight:600">Left for today</div>
+            <div class="left" id="kb-left">₹1,639</div>
+            <div class="cal" id="kb-cal"></div>
+          </div></div>
+        </a>
+        <a class="appcard jfr reveal" href="/just-for-run/">
+          <span class="store">iPhone · Free</span>
+          <div class="head"><img src="assets/apps/just-for-run-180.png" alt=""><span><b>just for run</b><small>One-button activity tracker</small></span></div>
+          <h3>One button. <span>Every activity.</span></h3>
+          <p>Run, walk, ride or hike with a live route, spoken splits, steady GPS, share links with the full map and an optional public profile.</p>
+          <span class="go">Explore just for run →</span>
+          <div class="art"><div class="jfrart" aria-hidden="true">
+            <svg viewBox="0 0 600 230" preserveAspectRatio="xMidYMid slice">
+              <rect width="600" height="230" fill="#141b26"/>
+              <g stroke="#223047" stroke-width="12" fill="none"><path d="M-10 60 L 610 110"/><path d="M180 -10 L 260 240"/><path d="M430 -10 L 470 240"/></g>
+              <g stroke="#1b2636" stroke-width="5" fill="none"><path d="M-10 170 L 610 150"/><path d="M60 -10 L 120 240"/><path d="M330 -10 L 560 240"/></g>
+              <path id="fam-route" d="M40 250 C 80 170, 150 150, 230 130 S 360 40, 440 70 S 560 170, 520 200" fill="none" stroke="#cbef52" stroke-width="5" stroke-linecap="round"/>
+              <circle id="fam-dot" r="7" fill="#cbef52" stroke="#fff" stroke-width="3"/>
+            </svg>
+            <div class="stats"><span><small>DISTANCE</small><span id="fam-km">5.82</span> km</span><span><small>PACE</small>5:31 /km</span></div>
+          </div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section id="faq">
     <div class="wrap">
       <div class="eyebrow reveal">FAQ</div>
@@ -507,8 +589,13 @@
 </main>
 
 <footer>
+  <div class="wrap famrow">
+    <a href="/"><img src="assets/icon.png" alt=""><span>Perch<small>Mac · iPhone</small></span></a>
+    <a href="/karo-budget/"><img src="assets/apps/karo-budget-180.png" alt=""><span>Karo Budget<small>iPhone</small></span></a>
+    <a href="/just-for-run/"><img src="assets/apps/just-for-run-180.png" alt=""><span>just for run<small>iPhone</small></span></a>
+  </div>
   <div class="wrap">
-    <span class="sp">© <span id="year">2026</span> Sarvesh SP</span>
+    <span class="sp">Made by Sarvesh SP · © <span id="year">2026</span>© <span id="year">2026</span> Sarvesh SP</span>
     <a href="privacy.html">Privacy</a>
     <a href="https://github.com/Sarvesh-SP/perch-releases/issues">Support</a>
     <a href="appcast.xml">Update feed</a>
@@ -669,6 +756,33 @@
     play(); typeIt(); runTerm();
   }
 })();
+
+  // The family cards: Karo Budget's month fills in, just for run's route draws.
+  (() => {
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const cal = document.getElementById('kb-cal');
+    if (cal) {
+      const lv = [0,4,3,2,3,0,1,3,0,2,4,1,0,0,2,1,0,3,0,2,4,1,3,0,2,0,1,2];
+      const col = ['#ecebe6','#c9dbc2','#9dbf93','#6e9c66','#3f6b3a'];
+      const cells = lv.map(() => cal.appendChild(document.createElement('i')));
+      const fill = () => cells.forEach((c, i) => setTimeout(() => c.style.background = col[lv[i]], still ? 0 : i * 60));
+      new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { fill(); o.disconnect(); } }, { threshold: .3 }).observe(cal);
+    }
+    const route = document.getElementById('fam-route'), dot = document.getElementById('fam-dot'), km = document.getElementById('fam-km');
+    if (route) {
+      const L = route.getTotalLength();
+      route.style.strokeDasharray = L;
+      const draw = t => {
+        const p = still ? .8 : (t % 9000) / 9000;
+        route.style.strokeDashoffset = L * (1 - p);
+        const pt = route.getPointAtLength(L * p);
+        dot.setAttribute('cx', pt.x); dot.setAttribute('cy', pt.y);
+        km.textContent = (7.4 * p).toFixed(2);
+        if (!still) requestAnimationFrame(draw);
+      };
+      requestAnimationFrame(draw);
+    }
+  })();
 </script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>just for run — Privacy</title>
+<meta name="description" content="How just for run handles your location and activities: on your iPhone, in your own iCloud, in links you share, and on an optional public profile.">
+<meta name="theme-color" content="#0f141d">
+<link rel="icon" href="/assets/apps/just-for-run-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0b0f16; --card: #151c28; --line: rgba(255,255,255,.08); --ink: #f3f5f0; --muted: rgba(243,245,240,.66); --faint: rgba(243,245,240,.42); --lime: #cbef52; }
+  @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg: #f6f5f1; --card: #fff; --line: rgba(28,27,24,.09); --ink: #1c1b18; --muted: rgba(28,27,24,.68); --faint: rgba(28,27,24,.44); } }
+  :root[data-theme="light"] { --bg: #f6f5f1; --card: #fff; --line: rgba(28,27,24,.09); --ink: #1c1b18; --muted: rgba(28,27,24,.68); --faint: rgba(28,27,24,.44); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.7 Inter, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  header { position: sticky; top: 0; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); background: color-mix(in srgb, var(--bg) 72%, transparent); border-bottom: 1px solid var(--line); }
+  header div { max-width: 780px; margin: 0 auto; padding: 0 22px; height: 62px; display: flex; align-items: center; justify-content: space-between; }
+  header a { text-decoration: none; display: flex; align-items: center; gap: 10px; font-family: Archivo, sans-serif; font-weight: 800; font-stretch: 105%; }
+  header img { width: 28px; height: 28px; border-radius: 7px; }
+  header .back { font-family: Inter, sans-serif; font-weight: 500; font-size: 14px; color: var(--muted); }
+  main { max-width: 780px; margin: 0 auto; padding: 64px 22px 80px; }
+  h1 { font-family: Archivo, sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(44px, 7vw, 72px); line-height: .95; letter-spacing: -.035em; margin: 0 0 14px; }
+  h1 span { color: var(--lime); }
+  @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) h1 span { color: #6f8a10; } }
+  h2 { font-family: Archivo, sans-serif; font-stretch: 100%; font-size: 23px; letter-spacing: -.02em; margin: 46px 0 8px; }
+  p, li { color: var(--muted); } b { color: var(--ink); }
+  .muted { color: var(--faint); font-size: 15px; }
+  .lead { font-size: 19px; padding: 22px 24px; border-radius: 20px; border: 1px solid var(--line); background: var(--card); margin-top: 30px; color: var(--ink); }
+  ul { padding-left: 20px; } li { margin: 8px 0; }
+  footer { max-width: 780px; margin: 0 auto; padding: 30px 22px 50px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--faint); }
+  footer nav { display: flex; gap: 18px; flex-wrap: wrap; } footer a { text-decoration: none; }
+</style>
+</head>
+<body>
+<header><div><a href="/just-for-run/"><img src="/assets/apps/just-for-run-180.png" alt="">just for run</a><a class="back" href="/just-for-run/">← Back to just for run</a></div></header>
+<main>
+  <h1>Privacy, <span>plainly.</span></h1>
+  <p class="muted">Applies to just for run for iPhone. Last updated 9 November 2026.</p>
+  <p class="lead">just for run has no accounts, no ads, no analytics and no tracking. Your activities are stored on your iPhone and in your own iCloud. The only things that leave are what you choose to share.</p>
+
+  <h2>Location</h2>
+  <p>just for run uses your location only while an activity is recording, to draw your route and measure distance, pace and elevation. When you stop, it stops. Allowing location “Always” is optional; it only keeps a recording going while the phone is locked or you're in another app. GPS works without an internet connection.</p>
+
+  <h2>Where your activities live</h2>
+  <ul>
+    <li><b>On your iPhone.</b> Activities, routes, tags and settings are stored on your device. Each GPS point is written to the device as it arrives, so a recording survives the app being closed.</li>
+    <li><b>In your private iCloud</b>, if iCloud is on for the app, so your devices stay in step. This is your own iCloud database, run by Apple; only your Apple ID can read it. The developer can't.</li>
+    <li><b>In backups you make.</b> JSON files you export go wherever you save them.</li>
+  </ul>
+
+  <h2>Sharing a run (optional)</h2>
+  <p>When you share an activity, just for run makes a poster image and a link to <b>justforrun-share.netlify.app</b>. The activity itself (route, distance, times, splits) is compressed into the part of the link after “#”. Browsers never send that part to a server, so the website's host receives only a request for the page, with the usual details any website sees, like your IP address and browser. Anyone you give the link to can see the run. “Hide start and end” leaves the first and last 200 m off the map.</p>
+
+  <h2>Public profile (optional, off by default)</h2>
+  <p>If you turn on a public profile, just for run publishes the parts you select (for example a display name, totals, streaks, personal bests, an activity calendar and recent activities with or without route maps) to the app's public iCloud database, so a web page can show them to anyone with the link. The profile is identified by a random ID, not your Apple ID, name or email. Activities and details you switch off are never uploaded. Turning the profile off, or tapping “Stop sharing and delete the page”, deletes it and its run pages.</p>
+
+  <h2>The share website</h2>
+  <p>Pages on justforrun-share.netlify.app load map tiles from <b>OpenFreeMap</b> to draw the map, so that service sees which map area is being viewed, like any online map. The website has no analytics, cookies or trackers.</p>
+
+  <h2>Other services</h2>
+  <ul>
+    <li><b>Apple Maps</b> draws maps inside the app.</li>
+    <li><b>Voice cues</b> are spoken on the device.</li>
+    <li><b>Crash and hang reports</b> come from iOS only if you've chosen to share them with developers in Settings › Privacy.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <p>Delete an activity in the app and it's removed from your device and iCloud. Deleting the app removes its data from the device; iCloud data can be removed in Settings › your name › iCloud › Manage Storage. Turn off the public profile to delete it.</p>
+
+  <h2>Children</h2>
+  <p>just for run doesn't knowingly collect anything from anyone, of any age; the optional profile only contains what its owner chooses to publish.</p>
+
+  <h2>Questions</h2>
+  <p>Open an issue at <a href="https://github.com/Sarvesh-SP/perch-releases/issues">github.com/Sarvesh-SP/perch-releases</a>. If this policy changes, the date at the top changes too.</p>
+</main>
+<footer><span>Made by Sarvesh SP</span><nav><a href="/just-for-run/">just for run</a><a href="/karo-budget/">Karo Budget</a><a href="/">Perch</a></nav></footer>
+</body>
+</html>

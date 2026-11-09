@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karo Budget — Privacy</title>
+<meta name="description" content="Karo Budget keeps your budget on your iPhone and in your own iCloud. No accounts, no bank access, no analytics.">
+<meta name="theme-color" content="#f6f5f1">
+<link rel="icon" href="/assets/apps/karo-budget-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #f6f5f1; --card: #fff; --line: rgba(31,35,33,.09); --ink: #1f2321; --muted: rgba(31,35,33,.68); --faint: rgba(31,35,33,.44); --accent: #4f7a49; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #101511; --card: #19201a; --line: rgba(236,240,232,.09); --ink: #ecf0e8; --muted: rgba(236,240,232,.66); --faint: rgba(236,240,232,.42); --accent: #a9cf9c; } }
+  :root[data-theme="dark"] { --bg: #101511; --card: #19201a; --line: rgba(236,240,232,.09); --ink: #ecf0e8; --muted: rgba(236,240,232,.66); --faint: rgba(236,240,232,.42); --accent: #a9cf9c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.7 Inter, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  header { position: sticky; top: 0; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); background: color-mix(in srgb, var(--bg) 76%, transparent); border-bottom: 1px solid var(--line); }
+  header div { max-width: 780px; margin: 0 auto; padding: 0 22px; height: 62px; display: flex; align-items: center; justify-content: space-between; }
+  header a { text-decoration: none; display: flex; align-items: center; gap: 10px; font-family: Fraunces, serif; font-weight: 600; font-size: 18px; }
+  header img { width: 28px; height: 28px; border-radius: 7px; }
+  header .back { font-family: Inter, sans-serif; font-weight: 500; font-size: 14px; color: var(--muted); }
+  main { max-width: 780px; margin: 0 auto; padding: 64px 22px 80px; }
+  h1 { font-family: Fraunces, serif; font-weight: 500; font-size: clamp(46px, 7vw, 74px); line-height: 1; letter-spacing: -.035em; margin: 0 0 14px; }
+  h1 em { color: var(--accent); font-weight: 400; }
+  h2 { font-family: Fraunces, serif; font-weight: 500; font-size: 25px; letter-spacing: -.02em; margin: 46px 0 8px; }
+  p, li { color: var(--muted); } b { color: var(--ink); }
+  .muted { color: var(--faint); font-size: 15px; }
+  .lead { font-size: 19px; padding: 22px 24px; border-radius: 20px; border: 1px solid var(--line); background: var(--card); margin-top: 30px; color: var(--ink); }
+  ul { padding-left: 20px; } li { margin: 8px 0; }
+  footer { max-width: 780px; margin: 0 auto; padding: 30px 22px 50px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--faint); }
+  footer nav { display: flex; gap: 18px; flex-wrap: wrap; } footer a { text-decoration: none; }
+</style>
+</head>
+<body>
+<header><div><a href="/karo-budget/"><img src="/assets/apps/karo-budget-180.png" alt="">Karo Budget</a><a class="back" href="/karo-budget/">← Back to Karo Budget</a></div></header>
+<main>
+  <h1>Privacy, <em>plainly.</em></h1>
+  <p class="muted">Applies to Karo Budget for iPhone. Last updated 9 November 2026.</p>
+  <p class="lead">Karo Budget doesn't collect your data. There are no accounts, no ads, no analytics, no tracking and no connection to your bank. The developer can't see your transactions, plans or anything else you put in the app.</p>
+
+  <h2>Where your budget lives</h2>
+  <ul>
+    <li><b>On your iPhone.</b> Transactions, monthly plans, groups, categories, splits, savings settings and your salary (if you enter it) are stored on your device.</li>
+    <li><b>In your private iCloud</b>, if iCloud is on for the app, so your devices stay in step. This is your own iCloud database, run by Apple; only your Apple ID can read it. Perch for Mac's optional Money tab reads the same private database.</li>
+    <li><b>In backups you make.</b> CSV files you export go wherever you save them.</li>
+  </ul>
+
+  <h2>Importing a statement</h2>
+  <p>Statement import works through an AI chat of your choice. Karo Budget gives you a prompt containing your category names and today's date; you copy it into the chat yourself, along with your statement, and paste the answer back. Karo Budget doesn't send your statement or the prompt anywhere, and isn't connected to any AI service. What you share in that chat is covered by that service's own privacy policy.</p>
+
+  <h2>Network</h2>
+  <p>Apart from Apple's iCloud sync, Karo Budget makes no network connections of its own.</p>
+
+  <h2>Crash reports</h2>
+  <p>Crash and hang reports come from iOS only if you've chosen to share them with developers in Settings › Privacy.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Settings in the app can reset a month or a year. Deleting the app removes its data from the device; iCloud data can be removed in Settings › your name › iCloud › Manage Storage.</p>
+
+  <h2>Children</h2>
+  <p>Karo Budget doesn't collect personal information from anyone, of any age.</p>
+
+  <h2>Questions</h2>
+  <p>Open an issue at <a href="https://github.com/Sarvesh-SP/perch-releases/issues">github.com/Sarvesh-SP/perch-releases</a>. If this policy changes, the date at the top changes too.</p>
+</main>
+<footer><span>Made by Sarvesh SP</span><nav><a href="/karo-budget/">Karo Budget</a><a href="/just-for-run/">just for run</a><a href="/">Perch</a></nav></footer>
+</body>
+</html>
