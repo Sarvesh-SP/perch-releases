@@ -3,6 +3,27 @@
     <channel>
         <title>Perch</title>
         <item>
+            <title>1.1.3</title>
+            <pubDate>Mon, 09 Nov 2026 23:35:30 +0530</pubDate>
+            <link>https://perch-notch.netlify.app/</link>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<b>Perch for Mac and iPhone</b>
+
+<li><b>No more empty daily notes:</b> a day's note that was opened but never written in is removed the next day, instead of piling up (and syncing to Apple Notes) for every day.</li>
+
+]]></description>
+            <enclosure url="https://perch-notch.netlify.app/downloads/Perch-1.1.3.dmg" length="7053594" type="application/octet-stream" sparkle:edSignature="D//zc/jPNjfK+f/gsc15UjzCwcy+GVWDX7hhwzuYcc35vGky67xT5JbnnRaiolKO37zkBfcSHhuZ9BrERbL8CA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch5-4.delta" sparkle:deltaFrom="4" length="723158" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wEL1MEhK9pJUXBSLMRBCBdYf9nIyATySq2TRuMLMeHyRt7BspiXBfGIYOq21Uz6oSTxfo9Kr/lLip5k0Aj0lDA=="/>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch5-3.delta" sparkle:deltaFrom="3" length="1128246" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lvsBJMbSPG3UHP//zDZak4in05M18JHFGLultByTu35OaRbJdj+i9sFX/sc6woYG1RhXOzIwp18KUO2QZtI7DA=="/>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch5-2.delta" sparkle:deltaFrom="2" length="1155126" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1i0XFMY5Yce1rOSlk7xADdGn3MXtUnjKgNDQILkCvZc+NNJ9fhZM3vdRFCp0DB+WFl4KnFlgarSi+1nMnKguAw=="/>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch5-1.delta" sparkle:deltaFrom="1" length="2657622" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="pOk5wg7TlHtIaNIyxxuFyOpU9TTt+VGif17xCTPNl4b61Kxfo/TY4vHHFkXPgaXshj1e/GB60zWLfoOcuJz7CA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.2</title>
             <pubDate>Mon, 09 Nov 2026 22:26:33 +0530</pubDate>
             <link>https://perch-notch.netlify.app/</link>
@@ -42,32 +63,6 @@
             <sparkle:deltas>
                 <enclosure url="https://perch-notch.netlify.app/downloads/Perch3-2.delta" sparkle:deltaFrom="2" length="654010" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+tf2CF4LGt09AUq7hMwSifA8ZntWDRvDIKYwtsVbW10v5JJIqoiHIROvLNDG38qDiKoxym9th/CSdO9aehGYBA=="/>
                 <enclosure url="https://perch-notch.netlify.app/downloads/Perch3-1.delta" sparkle:deltaFrom="1" length="2406062" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="uwHr/1CSPfvvpvD/J0H0A4po2xHSVv4BhvKzyNxkwqLdZ6gikQXXgBmmlZdWaaVIpCzTtb1wG0ymW7JcDNJWDQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.1.0</title>
-            <pubDate>Sun, 08 Nov 2026 13:51:25 +0530</pubDate>
-            <link>https://perch-notch.netlify.app/</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-<b>Perch for Mac</b>
-
-<li><b>Money tab</b> (optional): your Karo Budget data on the Mac. Safe to spend today, budget against actual with plans you can edit, and add, edit or delete transactions. Works on the Mac alone; with iCloud on it stays in step with Karo Budget on iPhone.</li>
-<li><b>Runs tab</b> (optional): what you record with just for run. Weekly chart, totals and streaks, filtered by activity (Running, Cycling…), and a big map window for any run with the route coloured by pace, splits, elevation and a share link.</li>
-<li><b>Beside the closed notch</b> (optional): money left today and your run streak.</li>
-<li><b>⌘K palette:</b> "spent 250 coffee #food" logs an expense.</li>
-<li><b>Claude:</b> new tools to log expenses, read spending and budgets, and summarise runs by activity.</li>
-<li><b>Sync status</b> for Money and Runs, with Sync now in the tab headers and Settings.</li>
-<li><b>Goals are gone.</b> Weekly review stays.</li>
-
-<b>Perch for iPhone</b> — Today, Upcoming and Notes; Goals removed.
-
-]]></description>
-            <enclosure url="https://perch-notch.netlify.app/downloads/Perch-1.1.0.dmg" length="6764627" type="application/octet-stream" sparkle:edSignature="B0k1GIQ9pCa+cW4DmwPVScUFGAoylwRbFMRdvZBh6fotM9LF7ZyVrFiO2Mb8lHJz3e5e+M1Nskpq9sfgy1Y2CQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://perch-notch.netlify.app/downloads/Perch2-1.delta" sparkle:deltaFrom="1" length="2396362" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="pRXggwAM5rfMTQfhRG45b582cLSNrdoEXxXGP7/eEFzc+YCCRN+ANhyTaOJ6hYGo06FG5JsSZxvsTGwLETQrDw=="/>
             </sparkle:deltas>
         </item>
     </channel>
