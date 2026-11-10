@@ -3,6 +3,30 @@
     <channel>
         <title>Perch</title>
         <item>
+            <title>1.1.5</title>
+            <pubDate>Tue, 10 Nov 2026 19:27:34 +0530</pubDate>
+            <link>https://perch-notch.netlify.app/</link>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<b>Perch for Mac</b>
+
+<li><b>Money › Overview:</b> what's left to spend today, a chart of the month's spending against an even pace to your plan, a ring for how much of the plan is used, quick stats (average a day, no-spend days, vs last month, busiest day), where your money went and the latest transactions.</li>
+<li><b>Money › Budget:</b> each category as a tile with its colour, spent of plan, what's left or over, and a marker for where you should be today. Click a tile to change its plan.</li>
+<li><b>Runs:</b> this week's distance with the change on last week, your streak and the week's bars; your month, year, longest and best pace; and activity cards with a route drawing and the key numbers, like "Morning Run · 6.26 km · 5:25 /km".</li>
+
+]]></description>
+            <enclosure url="https://perch-notch.netlify.app/downloads/Perch-1.1.5.dmg" length="7235844" type="application/octet-stream" sparkle:edSignature="yQ6YZzfTjWtiSgLF7u8ByE7n4DqjbGj3hsVNhZiR/TbfYWrbU91JIQRCjh9SCMvXAOzAEQ5TGuuZiUXTxQUDCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch7-6.delta" sparkle:deltaFrom="6" length="1057746" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rQX87fQV2GvlXw7381x3/ymH0iCuQWdBMWxAMoZQaffyw+IXtI1z+/favU6QqEpCKBMnM9TUfPGwRRtn2+RABQ=="/>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch7-5.delta" sparkle:deltaFrom="5" length="1159530" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4iFdxjXyXscZK9h1OsYtp1cepgXgANBjo0pocp5e1bEY1EY+rTGKCAZLBe32rOjO//pKHV/FQ6v92GGu/ewpDw=="/>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch7-4.delta" sparkle:deltaFrom="4" length="1212634" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5VNeiylOzR3yn/3a8/QkEvCM/jYfE2i8bT/Py0fjb770pMfNlW0Sw4vEeuwXbYrQscHwos+joAwNDqEUbj7aCA=="/>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch7-3.delta" sparkle:deltaFrom="3" length="1414518" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4qjNwyrbBAEYVlM+l9R0wHV3/K+iwBkg6PPMtFYjYY7yWxN5OZm+c95cg2OuE92Rzu97EeGCBILYXcuIhCN1Ag=="/>
+                <enclosure url="https://perch-notch.netlify.app/downloads/Perch7-2.delta" sparkle:deltaFrom="2" length="1430166" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NgPHLkmhwhywa2j6JayXpKWrTSZ3cdhfkFCzElE02rsiD9mJzn5BwNlG707EgOI+5f3apEnv0lBCo+nPrOinCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.4</title>
             <pubDate>Mon, 09 Nov 2026 23:58:21 +0530</pubDate>
             <link>https://perch-notch.netlify.app/</link>
@@ -45,28 +69,6 @@
                 <enclosure url="https://perch-notch.netlify.app/downloads/Perch5-3.delta" sparkle:deltaFrom="3" length="1128246" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lvsBJMbSPG3UHP//zDZak4in05M18JHFGLultByTu35OaRbJdj+i9sFX/sc6woYG1RhXOzIwp18KUO2QZtI7DA=="/>
                 <enclosure url="https://perch-notch.netlify.app/downloads/Perch5-2.delta" sparkle:deltaFrom="2" length="1155126" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1i0XFMY5Yce1rOSlk7xADdGn3MXtUnjKgNDQILkCvZc+NNJ9fhZM3vdRFCp0DB+WFl4KnFlgarSi+1nMnKguAw=="/>
                 <enclosure url="https://perch-notch.netlify.app/downloads/Perch5-1.delta" sparkle:deltaFrom="1" length="2657622" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="pOk5wg7TlHtIaNIyxxuFyOpU9TTt+VGif17xCTPNl4b61Kxfo/TY4vHHFkXPgaXshj1e/GB60zWLfoOcuJz7CA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.1.2</title>
-            <pubDate>Mon, 09 Nov 2026 22:26:33 +0530</pubDate>
-            <link>https://perch-notch.netlify.app/</link>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-<b>Perch for Mac</b>
-
-<li><b>Import a bank statement</b> in the Money tab: copy the prompt into any AI chat, paste its reply, then check each line, fix categories, dates or amounts, and add.</li>
-<li><b>Or let Claude do it:</b> attach a statement and ask Claude to import it into Perch. The lines open in the Money tab for you to check; nothing is added until you confirm.</li>
-<li><b>Transactions:</b> search, filter by spent, received, passed through or category, and see totals for exactly what's shown: spent, received, net, average, per day, the largest, and a breakdown by category.</li>
-
-]]></description>
-            <enclosure url="https://perch-notch.netlify.app/downloads/Perch-1.1.2.dmg" length="7037062" type="application/octet-stream" sparkle:edSignature="qaEYCOvGJDvEHDEcOx+TVqScoAN3Z4pdOtD2wUDC44TXoPa0E2iYwm83P9a93lRT5WShBfcfsnuzJB2kXd3zBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://perch-notch.netlify.app/downloads/Perch4-3.delta" sparkle:deltaFrom="3" length="1084046" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wSZK5H+A/dw3NBbVoAukX8OEu4KHxHaj5/x9mvBQdreyWuBYSVPG/BedEhrx4r9Kg2X6EvSUgBYQEz5/vCzkCA=="/>
-                <enclosure url="https://perch-notch.netlify.app/downloads/Perch4-2.delta" sparkle:deltaFrom="2" length="1122194" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="D7Zsq/4YkAH3poG02WfSj973oZsqqzlN0TvSMZinA1bWUyXApBbt/VrRWGcH4nTTiB9cifaO05UM3I0kXDtVDQ=="/>
-                <enclosure url="https://perch-notch.netlify.app/downloads/Perch4-1.delta" sparkle:deltaFrom="1" length="2647450" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="979088" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="j76HTJieMf23GkTp8qwkFPmmqhRQl+lCezCWXZ/Zu2ZZnQjSCIdnXNs/HgIZE8/kyShSeFSHpZ7nr7lsMfkuDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
